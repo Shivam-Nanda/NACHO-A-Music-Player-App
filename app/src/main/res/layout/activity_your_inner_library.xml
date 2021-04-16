@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    android:orientation="vertical"
+    tools:context=".YourInnerLibraryActivity" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardView"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            app:cardBackgroundColor="@android:color/white" >
+
+        <ImageView
+            android:id="@+id/imageViewPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:layout_below="@id/relative1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="Playlist Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/playlistNameTextView"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relative3"
+      android:layout_below="@id/relative2" >
+
+      <TextView
+          android:id="@+id/playlistDescriptionTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="PlaylistDescription"
+          android:textSize="22sp"
+          android:textAlignment="center"
+          android:textColor="@color/color_unselected"
+          android:layout_marginTop="10dp"
+          android:fontFamily="@font/montserrat" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative3" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innerSongsRecyclerView"
+            android:layout_marginTop="22dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

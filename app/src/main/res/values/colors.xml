@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_unselected">#9A9CA0</color>
+    <color name="black">#FF000000</color>
+    <color name="background_gradient_top">#6814D1</color>
+    <color name="background_gradient_bottom">#C62686</color>
+    <color name="transparent_black">#d80a0a0a</color>
+    <color name="transparent_white">#96ffffff</color>
+
+</resources>
